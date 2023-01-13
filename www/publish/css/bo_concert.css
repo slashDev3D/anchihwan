@@ -1,0 +1,40 @@
+.bo_gallery_list{display: flex;gap: 40px;flex-wrap: wrap;}
+.bo_gallery_list .empty_list{width: 100%;color: #aaa;font-size: 24px;}
+.bo_gallery_item{width: calc(25% - 15px);}
+.bo_gallery_item .gall_img{width: 100%;border-radius: 20px;border: 1px solid #ddd;}
+.bo_gallery_item .gall_img a.gall_img_thumb{display: block;padding-top: 136%;background-size: cover;background-position: center center;background-repeat: no-repeat;position: relative;}
+.bo_gallery_item .gall_img a.adm_bo_fix{position: absolute; padding-top: 0;z-index: 9;top: 20px;left: 20px;background-color: rgb(56, 106, 255);border-radius: 14px;font-size: 12px;font-weight: 500;color: #fff;height: 28px;display: flex !important;align-items: center;justify-content: center;padding: 0 14px;}
+.bo_gallery_item .gall_img .no_image{position: absolute;width: 100%;height: 100%;top: 0;left: 0;display: flex !important;align-items: center;text-align: center;justify-content: center;}
+.bo_gallery_item.closed .gall_img a.gall_img_thumb{opacity: 0.5;pointer-events: none;}
+.bo_gallery_closedText{position: absolute;top: 20px;right: 20px;background: #666;border-radius: 8px;width: 60px;height: 28px;display: none;align-items: center;justify-content: center;color: #fff;cursor: default;}
+.bo_gallery_item.closed .bo_gallery_closedText{display: flex;}
+
+#bo_gall .gall_info .gall_date, #bo_gall .gall_info .gall_view,
+.gall_info{font-size: 16px;color: #aaa;}
+.gall_info{display: flex;align-items: center;}
+.gall_info_item{margin-right: 10px;}
+.gall_info_item .material-symbols-outlined{font-size: 18px;margin-right: 0.3em;}
+.gall_info > div {display: flex;align-items: center;}
+
+.gall_box{position: relative;}
+.gall_chk{position: absolute;top: 0;left: 0;}
+
+#bo_gall .gall_text_href{margin: 0;margin-top: 20px;}
+.bo_cate_link_name{font-size: 14px;display: flex;align-items: center;justify-content: center;}
+.bo_cate_link_regular{color: #167ff8;border-bottom: 1px solid #167ff8;}
+.bo_concert_info{text-align: center;}
+.bo_concert_place{font-size: 14px;display: flex;justify-content: center;margin-bottom: 0.5em;}
+.bo_concert_place p{color: #999;border-bottom: 1px solid #999;}
+.bo_concert_title{font-size: 18px;font-weight: 600;text-align: center;display: flex;justify-content: center;}
+.bo_concert_date{font-size: 16px;color: #000;text-align: center;justify-content: center;display: flex;line-height: 1;margin-top: 0.5em;}
+.bo_tit{text-align: center;}
+
+@media all and (max-width:1025px){
+    .bo_gallery_item{width: calc(100%/3 - 40px/3);}
+    .bo_gallery_item .gall_img a.adm_bo_fix{top: 4%;left: 4%;}
+    .bo_gallery_list{gap: 20px;}
+}
+@media all and (max-width:681px){
+    .bo_gallery_item{width: calc(50% - 10px);}
+
+}

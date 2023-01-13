@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가객 안치환</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./landing_main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container--bg"><div class="container--bg-circle"></div></div>
+        <div class="text">
+            <div class="text01">우리 시대의 진정한 가객, 안치환</div>
+            <div class="text02">AN CHI HWAN</div>
+            <div class="text03">11월 중 오픈예정</div>
+        </div>
+        <div class="swiper landing--swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./landingImg/790A0252.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./landingImg/790A8006.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./landingImg/790A8467.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./landingImg/790A8525.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./landingImg/photo_2022-10-02_08-02-15.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./landingImg/photo_2022-10-02_08-03-15.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".landing--swiper", {
+          spaceBetween: 30,
+          loop : true,
+          autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+
+          breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2.2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3.2,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 5.2,
+      spaceBetween: 40
+    }
+  }
+        });
+      </script>
+</body>
+</html>
